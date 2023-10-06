@@ -1,38 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
 .App {
-  text-align: center;
+    margin: 30px auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgba(0, 0, 0, 0.904);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contain {
+    width: 90%;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sec1 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+    width: 190px;
+    text-align: center;
+    margin: 15px;
+}
+
+.MuiSvgIcon-root {
+    color: white !important;
+}
+
+@media (max-width:767px) {
+    .contain {
+        width: 96%;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sec1 {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:514px) {
+    .card {
+        width: 250px;
+    }
 }
